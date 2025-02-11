@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col justify-center items-center min-h-[100dvh]">
-        <h1 className="text-4xl font-bold text-center">SoundQueue</h1>
+        <h1 className="text-4xl font-bold text-center">SoundQueues</h1>
         <p className="text-lg text-center">Please insert your link</p>
         <div className="mt-5 flex gap-3">
           <Input type="text" placeholder="Youtube playlist link" className="max-w-xl" value={input} onChange={(e) => setInput(e.target.value)} />
