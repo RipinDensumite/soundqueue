@@ -148,17 +148,7 @@ export default function PlayPage() {
             {/* } */}
 
             <div className="max-w-2xl mx-auto mt-5">
-                <div className="flex justify-between items-center">
-                    <div>
-                        <h2>Playlist Videos</h2>
-                        <p>Total videos: {currentIndex !== null && `${currentIndex + 1} /`}  {videos.length}</p>
-                    </div>
-                    <div className="space-x-2">
-                        <Button onClick={() => setShuffleVideos([])} type="button" variant="outline" className="w-fit px-4 py-1">Original Playlist</Button>
-                        <Button onClick={shufflePlaylist} type="button" variant="outline" className="w-fit px-4 py-1">Shuffle Playlist</Button>
-                        <Button onClick={playOneRandomizeVideo} type="button" variant="outline" className="w-fit px-4 py-1">Play a randomize video</Button>
-                    </div>
-                </div>
+       
                 <div className="h-56 overflow-scroll border p-3">
                     {isShuffleVideo.map((video, index) => (
                         <div key={index} className="flex items-center space-x-4 cursor-pointer p-2 hover:bg-slate-300 hover:text-black" onClick={() => handlePlay(video)}>
